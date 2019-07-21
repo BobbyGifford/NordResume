@@ -1,5 +1,6 @@
 import styled from 'styled-components'
+import { Colors, CSSMainFont } from '../../../global'
 
-export const CSSFeature = styled.div`
-    color: #D8DEE9;
+export const CSSFeature = styled(CSSMainFont)`
+    background-color: ${Colors.nord1}
 `;

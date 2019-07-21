@@ -1,2 +1,2 @@
-export * from './Feature/Feature'
-export * from './Navbar/Navbar'
+export * from './Feature'
+export * from './Navbar'

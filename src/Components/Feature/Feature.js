@@ -1,9 +1,9 @@
 import React from 'react'
-import { CSSMainFont } from '../../global'
+import { CSSFeature } from './_styles'
 export function Feature() {
     return (
-        <CSSMainFont>
+        <CSSFeature>
             This is the feature area
-        </CSSMainFont>
+        </CSSFeature>
     )
 }
