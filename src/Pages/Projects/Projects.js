@@ -1,22 +1,32 @@
 import React from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { CSSCardBody } from './_styles'
+import { CSSCardBody, CSSCardTech, CSSBuiltUsing } from './_styles'
 
 import { ProjectData } from '../../data'
-
 
 export function Projects() {
     return (
         <Container>
             <Row>
                 {ProjectData.map((project, i) => (
-                    <Col xs={6} md={4}>
+                    <Col xs={12} md={4} key={i}>
                         <Card bg="dark">
                             <CSSCardBody>
                                 <Card.Img variant="top" src={project.img} />
                                 <Card.Body>
                                     <Card.Title>{project.title}</Card.Title>
-                                    <Card.Text>{project.description}</Card.Text>
+                                    <Card.Text as="div">
+
+                                        {project.description}
+                                        <CSSBuiltUsing>
+                                            <h6>Built Using:</h6>
+                                        </CSSBuiltUsing>
+                                        {project.tech.map((techItem) => (
+                                            <CSSCardTech key={techItem}>
+                                                {techItem}
+                                            </CSSCardTech>
+                                        ))}
+                                    </Card.Text>
                                 </Card.Body>
                             </CSSCardBody>
                         </Card>
