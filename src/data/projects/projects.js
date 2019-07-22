@@ -6,7 +6,7 @@ const SerapisSociety = {
 }
 
 const LostAncient = {
-    img: "https://esoteric-social-pics.s3-us-west-2.amazonaws.com/serapis-social.png",
+    img: "https://esoteric-social-pics.s3-us-west-2.amazonaws.com/lost.png",
     title: "Lost Ancient Knowledge",
     description: "A fullstack social media app dedicated to the spread and awareness of ancient sites.Its purpose is to spread knowledge among ancient architect enthusiasts. Many people don’t even know these places exist let alone the sheer complexity of them. These places are key to use understanding history.",
     tech: ["Python", "Djano", "Postgres", "Digital-Ocean", "NGINX", "Gunicorn"]

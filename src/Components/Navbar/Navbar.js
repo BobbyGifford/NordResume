@@ -8,7 +8,7 @@ export function Navigation() {
     return (
         <>
             <CSSNav>
-                <Navbar collapseOnSelect expand="lg" bg="nord0" variant="dark">
+                <Navbar collapseOnSelect expand="lg" variant="dark">
                     <Link to='/'><Navbar.Brand>Bobby Gifford</Navbar.Brand></Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
