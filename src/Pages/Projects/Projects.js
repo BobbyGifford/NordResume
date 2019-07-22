@@ -10,22 +10,23 @@ export function Projects() {
             <Row>
                 {ProjectData.map((project, i) => (
                     <Col xs={12} md={4} key={i}>
-                        <Card bg="dark">
+                        <Card bg="dark" style={{ marginTop: '2vh' }}>
                             <CSSCardBody>
                                 <Card.Img variant="top" src={project.img} />
                                 <Card.Body>
                                     <Card.Title>{project.title}</Card.Title>
                                     <Card.Text as="div">
-
                                         {project.description}
                                         <CSSBuiltUsing>
                                             <h6>Built Using:</h6>
                                         </CSSBuiltUsing>
-                                        {project.tech.map((techItem) => (
-                                            <CSSCardTech key={techItem}>
-                                                {techItem}
-                                            </CSSCardTech>
-                                        ))}
+                                        <Row>
+                                            {project.tech.map((techItem) => (
+                                                <CSSCardTech key={techItem}>
+                                                    {techItem}
+                                                </CSSCardTech>
+                                            ))}
+                                        </Row>
                                     </Card.Text>
                                 </Card.Body>
                             </CSSCardBody>
