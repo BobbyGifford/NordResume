@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { Colors } from "../../../global";
 
 export const CSSContainer = styled.div`
-    color: ${Colors.nord6};
-    max-width: 90vw;
-    margin: 0 auto;
+    max-width: 90vw
+    margin: 0 auto
     .btn-flat {
         margin-top: 1vh
         background-color: ${Colors.nord10};
         color: ${Colors.nord6};
+      }
+      .btn-secondary {
+        margin-top: 1vh
       }
 `;
 
