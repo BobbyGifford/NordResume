@@ -14,11 +14,11 @@ export function Card(props) {
                 <BsCard.Title>{project.title}</BsCard.Title>
                 <BsCard.Text as="div">
                   {project.description}
-                  <Row>
-                    {project.tech.map(techItem => (
-                      <CSSCardTech key={techItem}>{techItem}</CSSCardTech>
-                    ))}
-                  </Row>
+                  <br />
+                  <br />
+                  {project.tech.map(techItem => (
+                    <CSSCardTech key={techItem}>{techItem} </CSSCardTech>
+                  ))}
                   {project.link && (
                     <Button variant="flat" href={project.link} block>
                       View

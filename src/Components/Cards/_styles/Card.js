@@ -26,6 +26,5 @@ export const CSSBuiltUsing = styled.div`
 `;
 
 export const CSSCardTech = styled.span`
-    color: ${Colors.nord8}
-    margin: 0 .5vw
+    color: ${Colors.nord8};
 `;
