@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
-import { CSSFeature } from './_styles';
+import { CSSFeature } from './_styles/Feature';
 export function Feature() {
   return (
     <CSSFeature>

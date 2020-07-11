@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Card as BsCard, Button } from 'react-bootstrap';
-import { CSSCardBody, CSSCardTech } from './_styles';
+import { CSSCardBody, CSSCardTech } from './_styles/Card';
 
 export function Card(props) {
   return (
