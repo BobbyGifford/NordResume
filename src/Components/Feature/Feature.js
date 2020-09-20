@@ -4,7 +4,7 @@ import { CSSFeature } from './_styles/Feature';
 export function Feature() {
   return (
     <CSSFeature>
-      <Jumbotron className='d-none d-lg-block'>
+      <Jumbotron className='d-none d-lg-block shadow'>
         <img
           src='https://esoteric-social-pics.s3-us-west-2.amazonaws.com/profile_pic.jpg'
           alt='This is a profile pic'

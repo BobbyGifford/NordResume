@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors } from "../../../global";
+import styled from 'styled-components';
+import { Colors } from '../../../global';
 
 export const CSSContainer = styled.div`
     max-width: 90vw
@@ -17,6 +17,7 @@ export const CSSContainer = styled.div`
 export const CSSCardBody = styled.div`
   color: ${Colors.nord6};
   background-color: ${Colors.nord1};
+  min-height: 30em;
 `;
 
 export const CSSBuiltUsing = styled.div`
@@ -26,5 +27,5 @@ export const CSSBuiltUsing = styled.div`
 `;
 
 export const CSSCardTech = styled.span`
-    color: ${Colors.nord8};
+  color: ${Colors.nord8};
 `;

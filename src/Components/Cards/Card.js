@@ -7,9 +7,13 @@ export function Card(props) {
     <Row>
       {props.projects.map((project, i) => (
         <Col xs={12} md={4} key={i}>
-          <BsCard bg='dark' style={{ marginTop: '2vh' }}>
+          <BsCard bg='dark' style={{ marginTop: '2vh' }} className='shadow'>
             <CSSCardBody>
-              <BsCard.Img variant='top' src={project.img} />
+              <BsCard.Img
+                variant='top'
+                src={project.img}
+                style={{ maxHeight: '15em' }}
+              />
               <BsCard.Body>
                 <BsCard.Title>{project.title}</BsCard.Title>
                 <BsCard.Text as='div'>
